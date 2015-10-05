@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 words = ['amigo','bra','brah','bro','broski','brotha','brother','bud','buddy','compadre','dawg','dude','guy','homeboy','homie','mate','pal']
 
-@app.route('/bro', methods=['GET'])
+@app.route('/bro', methods=['GET'], strict_slashes=False)
 def broMe():
     return jsonify({'bro': random.choice(words)})
 

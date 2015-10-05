@@ -3,7 +3,7 @@ import random
 
 app = Flask(__name__)
 
-words = ['amigo','bra','brah','bro','broski','brotha','brother','bud','buddy','compadre','dawg','dude','guy','homeboy','homie','mate','pal']
+words = ['amigo','bra','brah','bro','broski','brotha','brother','bud','buddy','compadre','dawg','dude','guy','homeboy','homie','mate','pal', 'hombre', 'hermano']
 
 @app.route('/bro', methods=['GET'], strict_slashes=False)
 def broMe():

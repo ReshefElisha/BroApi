@@ -3,7 +3,27 @@ import random
 
 app = Flask(__name__)
 
-words = ['amigo','bra','brah','bro','broski','brotha','brother','bud','buddy','compadre','dawg','dude','guy','homeboy','homie','mate','pal', 'hombre', 'hermano']
+#add new terms as new lines, makes it easier to merge in git
+
+words = ['amigo',
+         'bra',
+         'brah',
+         'bro',
+         'broski',
+         'brotha',
+         'brother',
+         'bud',
+         'buddy',
+         'compadre',
+         'dawg',
+         'dude',
+         'guy',
+         'hermano',
+         'hombre',
+         'homeboy',
+         'homie',
+         'mate',
+         'pal']
 
 @app.route('/bro', methods=['GET'], strict_slashes=False)
 def broMe():
